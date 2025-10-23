@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriHelper AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --bg-light: #F9F7F1; /* Light beige */
+        --card-bg-light: #FFFFFF;
+        --text-light: #2C1E12; /* Dark brown */
+        --primary-green: #2E7D32; /* Richer green */
+        --primary-green-dark: #1B5E20;
+        --border-light: #E5E7EB;
+
+        --bg-dark: #121212;
+        --card-bg-dark: #1E1E1E;
+        --text-dark: #E0E0E0;
+        --border-dark: #424242;
+      }
+      body {
+        font-family: 'Nunito', sans-serif;
+        background-color: var(--bg-light);
+        color: var(--text-light);
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      html.dark body {
+        background-color: var(--bg-dark);
+        color: var(--text-dark);
+      }
+      /* Custom scrollbar for a nicer look */
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #888; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: #555; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.26.0",
+    "vite": "https://aistudiocdn.com/vite@^7.1.12",
+    "marked": "https://aistudiocdn.com/marked@^16.4.1",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.0.4",
+    "dompurify": "https://aistudiocdn.com/dompurify@^3.3.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

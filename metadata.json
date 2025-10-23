@@ -1,0 +1,7 @@
+{
+  "name": "AgriHelper AI",
+  "description": "An AI-powered application designed to assist farmers with crop disease diagnosis, pest identification, and expert farming advice using the Gemini API.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
